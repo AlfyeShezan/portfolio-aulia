@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulia Hasna Fadhilah | D3 Dental Health Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio website of Aulia Hasna Fadhilah, D3 Dental Health student at Poltekkes Kemenkes Yogyakarta.">
+    <meta name="keywords"
+        content="Aulia Hasna Fadhilah, Dental Health, Kesehatan Gigi, Poltekkes Yogyakarta, Portfolio">
+    <meta name="author" content="Aulia Hasna Fadhilah">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Aulia Hasna Fadhilah | D3 Dental Health Portfolio">
+    <meta property="og:description"
+        content="Portfolio website of Aulia Hasna Fadhilah, D3 Dental Health student at Poltekkes Kemenkes Yogyakarta.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <i class="fa-solid fa-tooth fa-spin"></i>
+            </div>
+            <div class="loader-title">Aulia Hasna Fadhilah</div>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+            <span class="loader-status">Loading Portfolio...</span>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo" id="logo-link">
+                aulia<span>.dentistry</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Main Navigation Links -->
+            <nav class="nav-menu" id="nav-menu-container">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+                    <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+                    <li><a href="#portfolio" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-image-area reveal-on-scroll">
+                    <div class="profile-card-wrapper">
+                        <!-- Double border neo-brutalism design -->
+                        <div class="profile-card-inner">
+                            <img src="assets/profile.jpg" alt="Aulia Hasna Fadhilah" class="profile-img"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <!-- High-fidelity SVG illustration fallback when photo is not present -->
+                            <div class="profile-svg-fallback" style="display: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%"
+                                    height="100%">
+                                    <rect width="200" height="200" fill="#D6E8FF" />
+                                    <circle cx="100" cy="115" r="95" fill="#F8D7E6" stroke="#000000" stroke-width="4" />
+                                    <!-- Cute Dental Student Cartoon -->
+                                    <path d="M70,200 C70,150 130,150 130,200" fill="#FFFFFF" stroke="#000000"
+                                        stroke-width="4" />
+                                    <circle cx="100" cy="85" r="35" fill="#FFE2D2" stroke="#000000" stroke-width="4" />
+                                    <!-- Hijab/Hair Frame -->
+                                    <path d="M63,80 C60,40 140,40 137,80 C137,120 63,120 63,80 Z" fill="#F8D7E6"
+                                        stroke="#000000" stroke-width="4" />
+                                    <circle cx="100" cy="80" r="28" fill="#FFE2D2" stroke="#000000" stroke-width="4" />
+                                    <!-- Face details -->
+                                    <circle cx="90" cy="80" r="3" fill="#000000" />
+                                    <circle cx="110" cy="80" r="3" fill="#000000" />
+                                    <path d="M94,92 Q100,98 106,92" fill="none" stroke="#000000" stroke-width="3"
+                                        stroke-linecap="round" />
+                                    <!-- Tooth ornament sticker -->
+                                    <rect x="135" y="125" width="45" height="45" rx="8" fill="#FFFFFF" stroke="#000000"
+                                        stroke-width="3" transform="rotate(15)" />
+                                    <path
+                                        d="M150,140 C146,136 142,142 142,148 C142,154 148,154 148,158 C148,154 154,154 154,148 C154,142 150,136 146,140"
+                                        fill="#D6E8FF" stroke="#000000" stroke-width="2"
+                                        transform="translate(5, 0) scale(1.1)" />
+                                </svg>
+                            </div>
+                            <div class="sticker sticker-tooth" aria-hidden="true">
+                                <i class="fa-solid fa-tooth"></i>
+                            </div>
+                            <div class="sticker sticker-sparkle" aria-hidden="true">
+                                <i class="fa-solid fa-sparkles"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-text-area reveal-on-scroll">
+                    <span class="badge hero-badge">Halo! Saya</span>
+                    <h1 class="hero-name">Aulia Hasna Fadhilah</h1>
+                    <div class="hero-status">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>D3 Dental Health Student at Poltekkes Kemenkes Yogyakarta</span>
+                    </div>
+                    <p class="hero-desc">
+                        "Mahasiswi D3 Kesehatan Gigi yang memiliki ketertarikan pada edukasi kesehatan gigi dan mulut,
+                        pelayanan kesehatan masyarakat, serta pengembangan keterampilan profesional untuk meningkatkan
+                        kualitas kesehatan gigi masyarakat."
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#about" class="btn btn-primary" id="btn-hero-about">
+                            <span>About Me</span>
+                            <i class="fa-solid fa-circle-user"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+                            <span>Contact Me</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dynamic Background shapes -->
+            <div class="bg-shape bg-shape-circle"></div>
+            <div class="bg-shape bg-shape-square"></div>
+            <div class="bg-shape bg-shape-triangle"></div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-title-wrapper reveal-on-scroll">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-subtitle">Kenali saya lebih dekat</div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Bio Cards -->
+                    <div class="about-left reveal-on-scroll">
+                        <div class="neo-card bio-card">
+                            <div class="card-header-pink">
+                                <i class="fa-solid fa-id-card"></i>
+                                <h3>Data Diri</h3>
+                            </div>
+                            <div class="bio-content">
+                                <div class="bio-item">
+                                    <div class="bio-label">Nama Lengkap</div>
+                                    <div class="bio-value">Aulia Hasna Fadhilah</div>
+                                </div>
+                                <div class="bio-item">
+                                    <div class="bio-label">Asal Daerah</div>
+                                    <div class="bio-value">Kulon Progo, D.I. Yogyakarta</div>
+                                </div>
+                                <div class="bio-item">
+                                    <div class="bio-label">Kampus</div>
+                                    <div class="bio-value">Poltekkes Kemenkes Yogyakarta</div>
+                                </div>
+                                <div class="bio-item">
+                                    <div class="bio-label">Program Studi</div>
+                                    <div class="bio-value">D3 Kesehatan Gigi</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="neo-card career-goal-card">
+                            <div class="card-header-blue">
+                                <i class="fa-solid fa-bullseye"></i>
+                                <h3>Tujuan Karier</h3>
+                            </div>
+                            <blockquote class="career-quote">
+                                "Menjadi tenaga kesehatan gigi yang profesional, kompeten, dan berdedikasi dalam
+                                memberikan pelayanan kesehatan gigi yang berkualitas serta berkontribusi dalam
+                                meningkatkan kesadaran masyarakat akan pentingnya menjaga kesehatan gigi dan mulut."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Interests Section -->
+                    <div class="about-right reveal-on-scroll">
+                        <div class="neo-card interest-card">
+                            <div class="card-header-black">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <h3>Bidang Minat & Fokus</h3>
+                            </div>
+                            <div class="interest-list">
+                                <div class="interest-item">
+                                    <div class="interest-icon pink-bg"><i class="fa-solid fa-hand-holding-hand"></i>
+                                    </div>
+                                    <span>Edukasi kesehatan gigi dan mulut</span>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="interest-icon blue-bg"><i class="fa-solid fa-users"></i></div>
+                                    <span>Promosi kesehatan masyarakat</span>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="interest-icon pink-bg"><i class="fa-solid fa-shield-virus"></i></div>
+                                    <span>Pencegahan penyakit gigi dan mulut</span>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="interest-icon blue-bg"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <span>Pelayanan kesehatan preventif</span>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="interest-icon pink-bg"><i class="fa-solid fa-photo-film"></i></div>
+                                    <span>Pengembangan media edukasi kesehatan</span>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="interest-icon blue-bg"><i class="fa-solid fa-people-group"></i></div>
+                                    <span>Kegiatan sosial dan pengabdian masyarakat</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-title-wrapper reveal-on-scroll">
+                    <h2 class="section-title">Skills & Keterampilan</h2>
+                    <div class="section-subtitle">Kompetensi klinis dan manajerial</div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Hard Skills (Soft Blue Cards) -->
+                    <div class="skills-column reveal-on-scroll">
+                        <h3 class="skills-group-title"><i class="fa-solid fa-stethoscope"></i> Hard Skills</h3>
+                        <div class="skills-list">
+                            <div class="neo-card skill-card blue-card">
+                                <div class="skill-icon"><i class="fa-solid fa-comment-medical"></i></div>
+                                <div class="skill-info">
+                                    <h4>Edukasi Kesehatan Gigi & Mulut</h4>
+                                    <p>Memberikan pemahaman pencegahan karies dan perawatan gigi mandiri.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card blue-card">
+                                <div class="skill-icon"><i class="fa-solid fa-teeth"></i></div>
+                                <div class="skill-info">
+                                    <h4>Pemeriksaan Kebersihan Gigi Sederhana</h4>
+                                    <p>Melakukan penilaian debris indeks, kalkulus indeks, dan kebersihan umum.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card blue-card">
+                                <div class="skill-icon"><i class="fa-solid fa-file-medical"></i></div>
+                                <div class="skill-info">
+                                    <h4>Pencatatan Rekam Medis Gigi</h4>
+                                    <p>Mengisi odontogram, anamnesis, dan data klinis secara sistematis.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card blue-card">
+                                <div class="skill-icon"><i class="fa-solid fa-pump-medical"></i></div>
+                                <div class="skill-info">
+                                    <h4>Sterilisasi Alat Kesehatan</h4>
+                                    <p>Prosedur dekontaminasi dan sterilisasi alat medis autoklaf standar klinis.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card blue-card">
+                                <div class="skill-icon"><i class="fa-solid fa-file-word"></i></div>
+                                <div class="skill-info">
+                                    <h4>Microsoft Word</h4>
+                                    <p>Penyusunan laporan klinis, proposal, makalah, dan administrasi kesehatan.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card blue-card">
+                                <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+                                <div class="skill-info">
+                                    <h4>Desain Grafis</h4>
+                                    <p>Pembuatan poster digital, brosur edukasi, infografis promkes via Canva.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills (Soft Pink Cards) -->
+                    <div class="skills-column reveal-on-scroll">
+                        <h3 class="skills-group-title"><i class="fa-solid fa-lightbulb"></i> Soft Skills</h3>
+                        <div class="skills-list">
+                            <div class="neo-card skill-card pink-card">
+                                <div class="skill-icon"><i class="fa-solid fa-comments"></i></div>
+                                <div class="skill-info">
+                                    <h4>Komunikasi</h4>
+                                    <p>Komunikasi terapeutik interpersonal dengan pasien dewasa maupun anak-anak.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card pink-card">
+                                <div class="skill-icon"><i class="fa-solid fa-people-carry-box"></i></div>
+                                <div class="skill-info">
+                                    <h4>Kerja Sama Tim</h4>
+                                    <p>Kolaborasi kolaboratif lintas sektor pada pengabdian masyarakat & klinik.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card pink-card">
+                                <div class="skill-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                                <div class="skill-info">
+                                    <h4>Public Speaking</h4>
+                                    <p>Penyampaian materi secara lugas dan interaktif di depan umum/sekolah.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card pink-card">
+                                <div class="skill-icon"><i class="fa-solid fa-sitemap"></i></div>
+                                <div class="skill-info">
+                                    <h4>Kepemimpinan</h4>
+                                    <p>Mengarahkan jalannya program kerja bidang kepemudaan & keagamaan.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card pink-card">
+                                <div class="skill-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div class="skill-info">
+                                    <h4>Time Management</h4>
+                                    <p>Menyeimbangkan kegiatan akademik klinis dengan organisasi kemasyarakatan.</p>
+                                </div>
+                            </div>
+                            <div class="neo-card skill-card pink-card">
+                                <div class="skill-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                                <div class="skill-info">
+                                    <h4>Problem Solving</h4>
+                                    <p>Mengatasi hambatan lapangan saat penyuluhan atau penanganan pasien.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-title-wrapper reveal-on-scroll">
+                    <h2 class="section-title">Experiences</h2>
+                    <div class="section-subtitle">Pengalaman praktikal dan organisasi</div>
+                </div>
+
+                <!-- Part 1: Organizational Experience -->
+                <div class="exp-sub-section">
+                    <h3 class="exp-group-title reveal-on-scroll"><i class="fa-solid fa-users-gear"></i> Organizational
+                        Experience</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item reveal-on-scroll">
+                            <div class="timeline-dot pink-bg">1</div>
+                            <div class="neo-card timeline-card pink-card">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">2021 – 2023</span>
+                                    <span class="timeline-org-badge">OSIS</span>
+                                </div>
+                                <h4 class="timeline-role">Sie IMTAK (Iman & Taqwa)</h4>
+                                <p class="timeline-desc">Mengoordinasikan kegiatan keagamaan, mempererat toleransi,
+                                    serta menyusun program pembinaan akhlak siswa di lingkungan sekolah.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item reveal-on-scroll">
+                            <div class="timeline-dot blue-bg">2</div>
+                            <div class="neo-card timeline-card blue-card">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">2021 – 2023</span>
+                                    <span class="timeline-org-badge">Dewan Ambalan</span>
+                                </div>
+                                <h4 class="timeline-role">PDD & Perlengkapan</h4>
+                                <p class="timeline-desc">Bertanggung jawab dalam Publikasi, Dokumentasi, dan Dekorasi
+                                    acara kepramukaan serta mempersiapkan kebutuhan logistik dan peralatan kegiatan
+                                    fisik.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 3 -->
+                        <div class="timeline-item reveal-on-scroll">
+                            <div class="timeline-dot pink-bg">3</div>
+                            <div class="neo-card timeline-card pink-card">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">2021 – 2023</span>
+                                    <span class="timeline-org-badge">Rohis</span>
+                                </div>
+                                <h4 class="timeline-role">Publikasi, Dokumentasi, & Dekorasi (PDD)</h4>
+                                <p class="timeline-desc">Membuat media informasi dakwah kreatif digital,
+                                    mendokumentasikan kegiatan kajian rutin, dan mendekorasi ruang ibadah untuk kegiatan
+                                    besar keagamaan.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 4 -->
+                        <div class="timeline-item reveal-on-scroll">
+                            <div class="timeline-dot blue-bg">4</div>
+                            <div class="neo-card timeline-card blue-card">
+                                <div class="timeline-header">
+                                    <span class="timeline-date">2021 – Sekarang</span>
+                                    <span class="timeline-org-badge">Karang Taruna</span>
+                                </div>
+                                <h4 class="timeline-role">Bendahara (Treasurer)</h4>
+                                <p class="timeline-desc">Mengelola arus kas keuangan organisasi kepemudaan desa,
+                                    menyusun laporan pertanggungjawaban bulanan, serta menganggarkan dana kegiatan
+                                    sosial kemasyarakatan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 2: Practical Experience & Activities -->
+                <div class="exp-sub-section" style="margin-top: 5rem;">
+                    <h3 class="exp-group-title reveal-on-scroll"><i class="fa-solid fa-briefcase-medical"></i> Practical
+                        Experience & Activities</h3>
+
+                    <div class="practical-grid">
+                        <div class="neo-card practical-card reveal-on-scroll">
+                            <div class="practical-card-top blue-bg">
+                                <i class="fa-solid fa-hospital"></i>
+                                <span>Praktik Kerja Lapangan (PKL)</span>
+                            </div>
+                            <div class="practical-body">
+                                <h4>Instansi Penempatan:</h4>
+                                <ul class="practical-list">
+                                    <li><i class="fa-solid fa-check"></i> Rumah Sakit Nyi Ageng Serang</li>
+                                    <li><i class="fa-solid fa-check"></i> Puskesmas Tempel I</li>
+                                </ul>
+                                <p>Menjalankan asuhan keperawatan gigi, asisten dental dokter gigi, sterilisasi alat
+                                    instrumen, dan edukasi langsung kepada pasien klinik.</p>
+                            </div>
+                        </div>
+
+                        <div class="neo-card practical-card reveal-on-scroll">
+                            <div class="practical-card-top pink-bg">
+                                <i class="fa-solid fa-people-group"></i>
+                                <span>Interprofessional Education (IPE)</span>
+                            </div>
+                            <div class="practical-body">
+                                <h4>Kolaborasi Multidisiplin</h4>
+                                <p>Berkolaborasi secara terpadu bersama mahasiswa dari berbagai profesi kesehatan
+                                    (Kebidanan, Keperawatan, Gizi, dll.) dalam merumuskan pemecahan masalah kesehatan
+                                    masyarakat secara holistik.</p>
+                            </div>
+                        </div>
+
+                        <div class="neo-card practical-card reveal-on-scroll">
+                            <div class="practical-card-top blue-bg">
+                                <i class="fa-solid fa-school"></i>
+                                <span>Penyuluhan Kesehatan Gigi</span>
+                            </div>
+                            <div class="practical-body">
+                                <h4>SD Kanisius Pugeran</h4>
+                                <p>Melaksanakan aksi nyata penyuluhan promotif-preventif cara menggosok gigi dengan baik
+                                    dan benar, pemilihan makanan sehat ramah gigi, serta pemeriksaan debris indeks anak
+                                    sekolah dasar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Section -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-title-wrapper reveal-on-scroll">
+                    <h2 class="section-title">My Portfolio</h2>
+                    <div class="section-subtitle">Dokumentasi kegiatan ilmiah, klinis, dan sosial — klik foto untuk
+                        memperbesar</div>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <!-- 1: Praktik Klinik -->
+                    <div class="gallery-item reveal-on-scroll" data-src="assets/portfolio-checkup.jpg">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/portfolio-checkup.jpg" alt="Portfolio Image"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-fallback" style="background:var(--pink);"><i
+                                    class="fa-solid fa-stethoscope"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- 2: PKL Puskesmas -->
+                    <div class="gallery-item reveal-on-scroll" data-src="assets/portfolio-pkl-clinic.jpg">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/portfolio-pkl-clinic.jpg" alt="Portfolio Image"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-fallback" style="background:var(--blue);"><i
+                                    class="fa-solid fa-clinic-medical"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- 3: IPE -->
+                    <div class="gallery-item reveal-on-scroll" data-src="assets/portfolio-ipe.jpg">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/portfolio-ipe.jpg" alt="Portfolio Image"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-fallback" style="background:var(--pink);"><i
+                                    class="fa-solid fa-people-carry-box"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- 4: Penyuluhan -->
+                    <div class="gallery-item reveal-on-scroll" data-src="assets/portfolio-penyuluhan.jpg">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/portfolio-penyuluhan.jpg" alt="Portfolio Image"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-fallback" style="background:var(--pink);"><i
+                                    class="fa-solid fa-chalkboard-user"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- 5: Presentasi -->
+                    <div class="gallery-item reveal-on-scroll" data-src="assets/portfolio-presentasi.jpg">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/portfolio-presentasi.jpg" alt="Portfolio Image"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-fallback" style="background:var(--pink);"><i
+                                    class="fa-solid fa-display"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- 6: Penyuluhan SD -->
+                    <div class="gallery-item reveal-on-scroll" data-src="assets/portfolio-sd.jpg">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/portfolio-sd.jpg" alt="Portfolio Image"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-fallback" style="background:var(--pink);"><i
+                                    class="fa-solid fa-school"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- 7: Kegiatan Desa -->
+                    <div class="gallery-item reveal-on-scroll" data-src="assets/portfolio-desa.jpg">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/portfolio-desa.jpg" alt="Portfolio Image"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-fallback" style="background:var(--blue);"><i
+                                    class="fa-solid fa-house-chimney"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- 8: Edukasi Kesehatan -->
+                    <div class="gallery-item reveal-on-scroll" data-src="assets/portfolio-edukasi.jpg">
+                        <div class="gallery-img-wrap">
+                            <img src="assets/portfolio-edukasi.jpg" alt="Portfolio Image"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-fallback" style="background:var(--pink);"><i
+                                    class="fa-solid fa-book-medical"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Overlay -->
+        <div class="lightbox-overlay" id="lightbox-overlay">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Tutup"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <button class="lightbox-prev" id="lightbox-prev" aria-label="Sebelumnya"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+            <button class="lightbox-next" id="lightbox-next" aria-label="Berikutnya"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+            <div class="lightbox-content">
+                <img src="" alt="Portfolio Image" id="lightbox-img">
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-title-wrapper reveal-on-scroll">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-subtitle">Hubungi saya melalui media sosial resmi</div>
+                </div>
+
+                <div class="contact-single reveal-on-scroll">
+                    <div class="contact-info-card neo-card">
+                        <h3 class="contact-side-title">Mari Terhubung</h3>
+                        <p class="contact-side-desc">Silakan hubungi saya melalui akun Instagram resmi di bawah ini
+                            untuk konsultasi, kerja sama, atau informasi lebih lanjut.</p>
+
+                        <div class="contact-cards-list">
+                            <!-- Instagram -->
+                            <a href="https://instagram.com/auliaaasna" class="neo-card contact-detail-card"
+                                target="_blank">
+                                <div class="contact-card-icon pink-bg"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="contact-card-text">
+                                    <span class="contact-label">Instagram</span>
+                                    <span class="contact-value">@auliaaasna</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <div class="container footer-container">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">aulia<span>.dentistry</span></a>
+                    <p>D3 Dental Health | Poltekkes Kemenkes Yogyakarta</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Aulia Hasna Fadhilah. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Custom Script -->
+        <script src="script.js"></script>
+</body>
+
+</html>
